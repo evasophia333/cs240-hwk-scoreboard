@@ -1,1 +1,171 @@
 /* Your CSS definitions here */
+div {
+    width: 600px;
+    height:300px;
+    padding: 10px;
+    border: 5px solid white;
+    background-color: rgb(50, 100, 85);
+    margin: 0;
+    
+  }
+
+.top1{
+    width: 15px;
+    height:30px;
+    border: 3px solid white;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+.top2{
+    width: 15px;
+    height:30px;
+    border: 3px solid white;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+
+.top3{
+    width: 15px;
+    height:30px;
+    border: 3px solid white;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+.top4{
+    width: 15px;
+    height:30px;
+    border: 3px solid white;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+.top5{
+    width: 15px;
+    height:30px;
+    border: 3px solid white;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+.top6{
+    width: 15px;
+    height:30px;
+    border: 3px solid white;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+.top7{
+    width: 15px;
+    height:30px;
+    border: 3px solid white;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+.top8{
+    width: 15px;
+    height:30px;
+    border: 3px solid black;
+    background-color: rgb(50, 100, 85);
+    display: inline-block;
+    font-size: 12pt;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    line-height: 30px;
+}
+
+.flexbox-container{
+    display: flex;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.headingNum{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    display: inline-block;
+    margin-left: 10px;
+}
+.away{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 12pt;
+    display: inline-block;
+    margin-right: 5px;
+}
+.home{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 12pt;
+        display: inline-block;    
+}
+.img{
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 40px;
+    font-size: 28pt;
+
+}
+
+.border{
+margin-left:500pt;
+}
+
+
