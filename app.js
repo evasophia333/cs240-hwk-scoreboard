@@ -17,3 +17,24 @@ node1.innerHTML = 1;
 node2.innerHTML = 2;
 
 result.innerHTML = parseInt(node1.innerHTML) + parseInt(node2.innerHTML);
+
+
+function randomurl() {
+    var randomNum = Math.floor(Math.random() * 3);
+    if (randomNum == 0) {
+        return 'buildup.mp3';
+    } else if (randomNum == 1) {
+        return 'charge1.mp3';
+    } else if (randomNum == 2) {
+        return 'charge2.mp3';
+    }
+}
+
+var random = randomurl();
+
+function playAudio(random) {
+    new Audio(random).play();
+}
+
+
+
