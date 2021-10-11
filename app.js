@@ -34,7 +34,21 @@ var random = randomurl();
 
 function playAudio(random) {
     new Audio(random).play();
+    if (random == 'chickendance.mp3') {
+        changeImageChicken();
+    } else {
+        changeImage();
+    }
 }
 
 
+
+function changeImageChicken() {
+    var img = document.getElementById('image');
+    img.src = 'sdchicken.jpg';
+}
+function changeImage() {
+    var img = document.getElementById('image');
+    img.src = 'megaphone.png';
+}
 

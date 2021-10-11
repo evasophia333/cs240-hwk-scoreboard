@@ -4,11 +4,12 @@
 <head>
   <title>Scoreboard Operator</title>
   <link rel="stylesheet" href="scoreboard.css" />
+  <meta charset=“UTF-8”>
 </head>
 
 <body>
   <div>
-    <img src='ups.png' class='img' />
+    <img id="image" src=ups.png class='img' />
     <h1 class=title> TODD FIELD</h1>
     <h1></h1>
     <h1 class=border>SPACE
@@ -64,22 +65,13 @@
     </select>
     <h1></h1>
     <label class=controlCenterText>Runs:</label>
-    <button class=plus>+</button>
-    <button class=minus>-</button>
+    <button id=plus>+</button>
+    <button id=minus>-</button>
     <h1></h1>
     <label class=controlCenterText>Sounds:</label>
-    <button onclick="playAudio(random)">music</button>
-    <button onclick="playAudio('chickendance.mp3')">chicken dance!</button>
-
-
-
-
+    <button onclick="playAudio(random)">&#9835;</button>
+    <button onclick="playAudio('chickendance.mp3')">&#127929;</button>
   </div>
-
-
-
-
-  <!-- FILL IN YOUR SCORE BOARD HTML CODE HERE -->
 
   <script src="app.js"></script>
 </body>
