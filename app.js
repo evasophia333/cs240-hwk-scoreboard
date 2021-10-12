@@ -20,12 +20,13 @@ let bottom6 = document.querySelector('#bottom6');  // select the element
 let bottom7 = document.querySelector('#bottom7');  // select the element 
 let bottomresult = document.querySelector('#bottom8');  // select the element 
 
-node1.innerHTML = 1;
+top1.innerHTML = 1;
 node2.innerHTML = 2;
 bottom1.innerHTML = 3;
 
 result.innerHTML = parseInt(node1.innerHTML) + parseInt(node2.innerHTML) + parseInt(node3.innerHTML) + parseInt(node4.innerHTML) + parseInt(node5.innerHTML) + parseInt(node6.innerHTML) + parseInt(node7.innerHTML);
 bottomresult.innerHTML = parseInt(bottom1.innerHTML) + parseInt(bottom2.innerHTML) + parseInt(bottom3.innerHTML) + parseInt(bottom4.innerHTML) + parseInt(bottom5.innerHTML) + parseInt(bottom6.innerHTML) + parseInt(bottom7.innerHTML);
+
 
 /**
  * determines a random song name
@@ -69,4 +70,31 @@ function changeImage() {
     var img = document.getElementById('image');
     img.src = 'megaphone.png';
 }
+
+
+let score = 0;
+let buttonPlusNode = document.querySelector("#plus"); //increases the score by one
+buttonPlusNode.addEventListener("click", function (evt) {
+    score += 1;
+    console.log(score);
+});
+
+let buttonMinusNode = document.querySelector("#minus"); //decreases the score by one but doesnt become negative
+buttonMinusNode.addEventListener("click", function (evt) {
+    if (score >= 1) {
+        score -= 1;
+    } else {
+        score = 0;
+    }
+    console.log(score);
+});
+
+
+var selection = document.querySelector('select');
+selection.addEventListener('change', function (evt) {
+    let result = selection.options[selection.selectedIndex].text;
+    console.log(result);
+    return result;
+});
+
 

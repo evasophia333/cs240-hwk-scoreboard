@@ -81,10 +81,10 @@ div {
 }
 .img{
     float: right;
-    width: 200px;
-    height: 200px;
-    margin-top: 30px;
-    margin-right: 30px;
+    width: 120px;
+    height: 120px;
+    margin-top: 60px;
+    margin-right: 60px;
 }
 .title{
     font-family: Arial, Helvetica, sans-serif;
@@ -119,8 +119,8 @@ color: rgb(50, 100, 85);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 28pt;
     text-align: center;
-    margin-top: 1px;
-    padding: 20px;
+    margin-top: 3px;
+    padding: 10px;
 }
 
 
@@ -141,3 +141,11 @@ color: rgb(50, 100, 85);
     border-radius: 5px;
     padding-top: 60px;
   }
+
+.plusMinus{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.music{
+    font-size: 10pt;
+}
