@@ -50,12 +50,12 @@
   <div class=controlCenter>
     <h1 class=controlCenterTitleText>CONTROL CENTER</h1>
     <label class=controlCenterText>Who:</label>
-    <select id='HomeAway'>
+    <select id='homeAway'>
       <option value='home' id=homeOption>HOME</option>
       <option value='away' id=awayOption>AWAY</option>
     </select>
     <label class=controlCenterText>Inning:</label>
-    <select id='controlCenter' name='t-shirt'>
+    <select id='Inning'>
       <option value='1'>1</option>
       <option value='2'>2</option>
       <option value='3'>3</option>
@@ -70,8 +70,8 @@
     <button class=plusMinus id=minus>-</button>
     <h1></h1>
     <label class=controlCenterText>Sounds:</label>
-    <button class=music onclick="playAudio(random)">&#9835;</button>
-    <button class=music onclick="playAudio('chickendance.mp3')">&#127929;</button>
+    <button onclick="playAudio(random)">&#9835;</button>
+    <button onclick="playAudio('chickendance.mp3')">&#127929;</button>
   </div>
   <script src="app.js"></script>
 </body>

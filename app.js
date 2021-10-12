@@ -10,7 +10,7 @@ let node4 = document.querySelector('#top4');  // select the element
 let node5 = document.querySelector('#top5');  // select the element 
 let node6 = document.querySelector('#top6');  // select the element 
 let node7 = document.querySelector('#top7');  // select the element 
-let result = document.querySelector('#top8');  // select the element 
+//let result = document.querySelector('#top8');  // select the element 
 let bottom1 = document.querySelector('#bottom1');  // select the element 
 let bottom2 = document.querySelector('#bottom2');  // select the element 
 let bottom3 = document.querySelector('#bottom3');  // select the element 
@@ -24,7 +24,7 @@ top1.innerHTML = 1;
 node2.innerHTML = 2;
 bottom1.innerHTML = 3;
 
-result.innerHTML = parseInt(node1.innerHTML) + parseInt(node2.innerHTML) + parseInt(node3.innerHTML) + parseInt(node4.innerHTML) + parseInt(node5.innerHTML) + parseInt(node6.innerHTML) + parseInt(node7.innerHTML);
+//result.innerHTML = parseInt(node1.innerHTML) + parseInt(node2.innerHTML) + parseInt(node3.innerHTML) + parseInt(node4.innerHTML) + parseInt(node5.innerHTML) + parseInt(node6.innerHTML) + parseInt(node7.innerHTML);
 bottomresult.innerHTML = parseInt(bottom1.innerHTML) + parseInt(bottom2.innerHTML) + parseInt(bottom3.innerHTML) + parseInt(bottom4.innerHTML) + parseInt(bottom5.innerHTML) + parseInt(bottom6.innerHTML) + parseInt(bottom7.innerHTML);
 
 
@@ -71,25 +71,10 @@ function changeImage() {
     img.src = 'megaphone.png';
 }
 
-
-let score = 0;
-let buttonPlusNode = document.querySelector("#plus"); //increases the score by one
-buttonPlusNode.addEventListener("click", function (evt) {
-    score += 1;
-    console.log(score);
-});
-
-let buttonMinusNode = document.querySelector("#minus"); //decreases the score by one but doesnt become negative
-buttonMinusNode.addEventListener("click", function (evt) {
-    if (score >= 1) {
-        score -= 1;
-    } else {
-        score = 0;
-    }
-    console.log(score);
-});
-
-
+/**
+ * Keeps track of which team was selected
+ */
+//let result = 'HOME';
 var selection = document.querySelector('select');
 selection.addEventListener('change', function (evt) {
     let result = selection.options[selection.selectedIndex].text;
@@ -98,3 +83,35 @@ selection.addEventListener('change', function (evt) {
 });
 
 
+/**
+ * Keeps track of which inning was selected
+*/
+var inning = document.querySelector('#Inning');
+inning.addEventListener('change', function (evt) {
+    let resultInning = inning.options[inning.selectedIndex].text;
+    console.log(resultInning);
+    return resultInning;
+});
+
+
+/**
+ * Determines the score 
+ */
+let score = 0;
+let buttonPlusNode = document.querySelector("#plus"); //increases the score by one
+buttonPlusNode.addEventListener("click", function (evt) {
+    score += 1;
+    console.log(score);
+    return score;
+});
+
+let buttonMinusNode = document.querySelector("#minus"); //decreases the score by one but doesnt become negative
+buttonMinusNode.addEventListener("click", function () {
+    if (score >= 1) {
+        score -= 1;
+    } else {
+        score = 0;
+    }
+    console.log(score);
+    return score;
+});
