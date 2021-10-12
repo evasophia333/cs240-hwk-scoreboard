@@ -8,7 +8,7 @@
  * @returns name of the song 
  */
 function randomurl() {
-    var randomNum = Math.floor(Math.random() * 3);
+    var randomNum = Math.floor(Math.random() * 3); //chooses random number and that corresponds to a song
     if (randomNum == 0) {
         return 'buildup.mp3';
     } else if (randomNum == 1) {
@@ -17,7 +17,6 @@ function randomurl() {
         return 'charge2.mp3';
     }
 }
-
 var random = randomurl();
 /**
  * plays the random song name
@@ -73,29 +72,29 @@ let score = 0;
 let spot = '#HOME1'
 let buttonPlusNode = document.querySelector("#plus"); //increases the score by one
 buttonPlusNode.addEventListener("click", function (evt) {
-    spot = '#' + result + resultInning;
+    spot = '#' + result + resultInning; //finds the spot on the board
     let currentSpot = document.querySelector(spot);
     let value = parseInt(currentSpot.innerHTML);
-    currentSpot.innerHTML = "" + (value + 1);
-    let r = '#' + result + '8';
+    currentSpot.innerHTML = (value + 1); //increases the spot
+    let r = '#' + result + '8';     //changes the result 
     currentSpot = document.querySelector(r);
     value = parseInt(currentSpot.innerHTML);
-    currentSpot.innerHTML = "" + (value + 1);
+    currentSpot.innerHTML = (value + 1);
 });
 
 let buttonMinusNode = document.querySelector("#minus"); //decreases the score by one but doesnt become negative
 buttonMinusNode.addEventListener("click", function () {
-    spot = '#' + result + resultInning;
+    spot = '#' + result + resultInning; //finds the spot 
     let currentSpot = document.querySelector(spot);
     let value = parseInt(currentSpot.innerHTML);
-    let r = '#' + result + '8';
+    let r = '#' + result + '8'; //finds the result
     let resultspot = document.querySelector(r);
     let resultvalue = parseInt(resultspot.innerHTML);
     if (value >= 1) {
-        currentSpot.innerHTML = "" + (value - 1);
+        currentSpot.innerHTML = (value - 1); //changes the result and the spot 
         resultspot.innerHTML = (resultvalue - 1);
     } else {
-        currentSpot.innerHTML = 0;
+        currentSpot.innerHTML = 0; //will not allow it to become negative 
     }
 });
 

@@ -5,7 +5,7 @@ div {
     background-color: rgb(50, 100, 85);
     margin: 3pt;
   }
-
+/* style for the numbers and boxes*/
 .nums{
     width: 18px;
     height:30px;
@@ -20,7 +20,7 @@ div {
     line-height: 30px;
     margin: 1pt;
 }
-
+/* style for the last numbers and box*/
 .last{
     width: 18px;
     height:30px;
@@ -34,6 +34,7 @@ div {
     line-height: 30px;
     margin: 1pt;
 }
+/* style for the Inning Numbers*/
 .headingNum{
     width: 15px;
     height:30px;
@@ -46,7 +47,7 @@ div {
     margin-left: 9pt;
     line-height: 40px;
 }
-
+/*style for the Away text*/
 .away{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -56,6 +57,7 @@ div {
     display: inline-block;
     margin-right: 7px;
 }
+/*style for the home text*/
 .home{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -65,6 +67,7 @@ div {
     display: inline-block;    
     margin-right: 5px;
 }
+/*style for the image*/
 .img{
     float: right;
     width: 120px;
@@ -72,12 +75,14 @@ div {
     margin-right: 50px;    
     margin-top: 50px;
 }
+/*style for the field title*/
 .title{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-left: 40px;
     font-size: 28pt;
     display: inline-block;   
+    text-align: center;
 }
 .border{
 font-size: 12pt;
@@ -96,6 +101,7 @@ color: rgb(50, 100, 85);
     margin: 0;
     border-radius: 10px;
 }
+/*control center title style*/
 .controlCenterTitleText{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -104,6 +110,7 @@ color: rgb(50, 100, 85);
     margin-top: 3px;
     padding: 10px;
 }
+/*control center text style*/
 .controlCenterText{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -113,6 +120,7 @@ color: rgb(50, 100, 85);
     font-weight: normal;
     padding-left: 20pt;
 }
+/*drop down menue style*/
 .dropdown-menu {
     display: flex;
     flex-direction: column;
@@ -120,9 +128,14 @@ color: rgb(50, 100, 85);
     border-radius: 5px;
     padding-top: 60px;
   }
-
+/*plus and minus sign style*/
 .plusMinus{
     font-family: 'Courier New', Courier, monospace;
+}
+
+.audioButton{
+    width: 20pt;
+    height: 15pt;
 }
 
 
