@@ -3,31 +3,6 @@
  * @author Eva Sophia Shimanski
  */
 
-let node1 = document.querySelector('#top1');  // select the element 
-let node2 = document.querySelector('#top2');  // select the element 
-let node3 = document.querySelector('#top3');  // select the element 
-let node4 = document.querySelector('#top4');  // select the element 
-let node5 = document.querySelector('#top5');  // select the element 
-let node6 = document.querySelector('#top6');  // select the element 
-let node7 = document.querySelector('#top7');  // select the element 
-//let result = document.querySelector('#top8');  // select the element 
-let bottom1 = document.querySelector('#bottom1');  // select the element 
-let bottom2 = document.querySelector('#bottom2');  // select the element 
-let bottom3 = document.querySelector('#bottom3');  // select the element 
-let bottom4 = document.querySelector('#bottom4');  // select the element 
-let bottom5 = document.querySelector('#bottom5');  // select the element 
-let bottom6 = document.querySelector('#bottom6');  // select the element 
-let bottom7 = document.querySelector('#bottom7');  // select the element 
-let bottomresult = document.querySelector('#bottom8');  // select the element 
-
-top1.innerHTML = 1;
-node2.innerHTML = 2;
-bottom1.innerHTML = 3;
-
-//result.innerHTML = parseInt(node1.innerHTML) + parseInt(node2.innerHTML) + parseInt(node3.innerHTML) + parseInt(node4.innerHTML) + parseInt(node5.innerHTML) + parseInt(node6.innerHTML) + parseInt(node7.innerHTML);
-bottomresult.innerHTML = parseInt(bottom1.innerHTML) + parseInt(bottom2.innerHTML) + parseInt(bottom3.innerHTML) + parseInt(bottom4.innerHTML) + parseInt(bottom5.innerHTML) + parseInt(bottom6.innerHTML) + parseInt(bottom7.innerHTML);
-
-
 /**
  * determines a random song name
  * @returns name of the song 
@@ -74,12 +49,10 @@ function changeImage() {
 /**
  * Keeps track of which team was selected
  */
-//let result = 'HOME';
 var selection = document.querySelector('select');
+let result = 'AWAY'
 selection.addEventListener('change', function (evt) {
-    let result = selection.options[selection.selectedIndex].text;
-    console.log(result);
-    return result;
+    result = selection.options[selection.selectedIndex].text;
 });
 
 
@@ -87,31 +60,43 @@ selection.addEventListener('change', function (evt) {
  * Keeps track of which inning was selected
 */
 var inning = document.querySelector('#Inning');
+let resultInning = 1;
 inning.addEventListener('change', function (evt) {
-    let resultInning = inning.options[inning.selectedIndex].text;
-    console.log(resultInning);
-    return resultInning;
+    resultInning = inning.options[inning.selectedIndex].text;
 });
 
 
 /**
- * Determines the score 
+ * Determines the score and upates it in the table 
  */
 let score = 0;
+let spot = '#HOME1'
 let buttonPlusNode = document.querySelector("#plus"); //increases the score by one
 buttonPlusNode.addEventListener("click", function (evt) {
-    score += 1;
-    console.log(score);
-    return score;
+    spot = '#' + result + resultInning;
+    let currentSpot = document.querySelector(spot);
+    let value = parseInt(currentSpot.innerHTML);
+    currentSpot.innerHTML = "" + (value + 1);
+    let r = '#' + result + '8';
+    currentSpot = document.querySelector(r);
+    value = parseInt(currentSpot.innerHTML);
+    currentSpot.innerHTML = "" + (value + 1);
 });
 
 let buttonMinusNode = document.querySelector("#minus"); //decreases the score by one but doesnt become negative
 buttonMinusNode.addEventListener("click", function () {
-    if (score >= 1) {
-        score -= 1;
+    spot = '#' + result + resultInning;
+    let currentSpot = document.querySelector(spot);
+    let value = parseInt(currentSpot.innerHTML);
+    let r = '#' + result + '8';
+    let resultspot = document.querySelector(r);
+    let resultvalue = parseInt(resultspot.innerHTML);
+    if (value >= 1) {
+        currentSpot.innerHTML = "" + (value - 1);
+        resultspot.innerHTML = (resultvalue - 1);
     } else {
-        score = 0;
+        currentSpot.innerHTML = 0;
     }
-    console.log(score);
-    return score;
 });
+
+
