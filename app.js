@@ -36,7 +36,7 @@ function playAudio(random) {
  */
 function changeImageChicken() {
     var img = document.getElementById('image');
-    img.src = 'sdchicken.jpg';
+    img.src = 'sdchicken.png';
 }
 /**
  * changes the image to the cheer!
